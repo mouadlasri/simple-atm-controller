@@ -191,7 +191,7 @@ if __name__ == "__main__":
     ###
     # DEPOSIT
     ###
-    # Command Pattern: controller.account_actions(account_number, pin, "Deposit", amount)
+    # Command Pattern: controller.account_actions(account_number, pin, type_account, "Deposit", amount)
     print("Depositing 100..")
     print(test_controller.account_actions(123456, 1234, "checking", "Deposit", 100))
     print("Checking Balance: ", test_controller.account_actions(123456, 1234, "checking", "See Balance"))
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     ###
     # WITHDRAW
     ### 
-    # Command Pattern: controller.account_actions(account_number, pin, "Withdraw", amount)
+    # Command Pattern: controller.account_actions(account_number, pin, type_account, "Withdraw", amount)
     print('Withdrawing 200 from checking account') # valid operation since balance is 300
     status = test_controller.account_actions(123456, 1234, "checking", "Withdraw", 200)
     print('Money withdrawn successfully') if status == True else print('Insufficient funds')
