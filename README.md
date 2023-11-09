@@ -31,4 +31,4 @@ Controller.py has three main sections:
 
 ### Program execution
 
-Run: `python controller.py` in the command line
+Run: `python atmcontroller.py` in the command line
